@@ -1,0 +1,30 @@
+#contenedor-imagen-pequena {
+  position: relative;
+}
+
+#contenedor-imagen-grande {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none; /* Oculta la imagen grande inicialmente */
+}
+
+.imagen-pequeña {
+    width: 200px;
+    height: 200px;
+}
+
+.imagen-grande {
+    width: 500px;
+    height: 400px;
+}
+
+.row{
+  padding: 0;
+  width: 100%;
+}
+
+.col-12 {
+  padding: 0;
+  width: 100%;
+}
