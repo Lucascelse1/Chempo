@@ -45,6 +45,7 @@
     display: flex;
     justify-content: end;
     padding: 2rem;
+    
   }
 
   .nav-ul li a {
@@ -93,15 +94,16 @@
   }
 
   .logo-header {
-    width: 12.5rem;
-    height: 7.25rem;
-    margin-top: 1rem;
+    width: 14.5rem;
+    height: 9.25rem;
     margin-left: 9rem;
-    margin-right: 0rem;
   }
 
   .nav-btn {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
   }
 
   .nav-ul {
@@ -118,7 +120,7 @@
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
-    color: white;
+    color: rgb(1, 1, 1);
   }
 
   .items-sec1 {
@@ -254,6 +256,55 @@
     height: 6.25rem;
   }
 
+  /* subseccion */
+  #sub-seccion{
+    margin-top: 2rem;
+  }
+
+  .normas-container {
+    width: 100%;
+    border-bottom: 0.25rem solid black;
+    border-top: 0.25rem solid black;
+  }
+
+  .logos-info {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+  
+  .imgs-normas{
+    width: 4rem;
+    height: 4rem;
+  }
+  
+  .titulo-normas{
+    text-align: center;
+    font-family: Russo one;
+    
+  }
+
+  .parrafo-normas {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .div-img-normas {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+  }
+
+  .div-tarjeta {
+    margin: 2rem;
+  }
+
+  .div-texto-normas {
+    text-align: center;
+  }
+  
   /* seccion 3 */
 
   #seccion3 {
@@ -261,7 +312,7 @@
   }
 
   .fondo-sec3 {
-    width: 90%;
+    width: 80%;
     background-image: url(./imagenes/limpiadores_2.jpeg);
     background-position: center;
     background-repeat: no-repeat;
@@ -337,7 +388,7 @@
     width: 60%;
     height: 17rem;
   }
-
+  
   /* seccion 4 */
 
   #seccion4 {
@@ -447,14 +498,24 @@
   }
 
   footer {
-    background: black;
-    color: white;
+    background: rgb(240, 243, 239);
+    color: black;
     width: 100%;
+  }
+
+  .logo-footer {
+    width: 16.5rem;
+    height: 9.25rem;
+    margin: 0;
   }
 
   .colunma-12 {
     display: flex;
     justify-content: center;
+  }
+
+  .link-footer{
+    color: #000000;
   }
 }
 
