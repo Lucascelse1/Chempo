@@ -388,7 +388,6 @@
 
   #seccion4 {
     height: 140vh;
-  
   }
 
   .form-container {
@@ -408,7 +407,6 @@
     display: flex;
     flex-direction: column;
     background-color: #ffff;
-    margin: auto;
     width: 35%;
     padding: 4.5em 3em;
     border-radius: 10px;
@@ -418,12 +416,17 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
   }
 
   .div-titulo {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .img-form {
+    width: 9rem;
+    height: 8rem;
   }
 
   .check-container {
@@ -489,9 +492,11 @@
   .titulo-checkbox{
     font-size: 1.2rem;
   }
+
   .div-titulo {
     display: flex;
     justify-content: center;
+    width: 100%;
   }
 
   .titulo-form {
@@ -499,7 +504,18 @@
     font-size: 3.4rem;
     margin-bottom: 1.25rem;
     font-family: Russo one;
-    
+  }
+
+  .titulo-form-div {
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .titulo-img{
+    display: flex;
+    justify-content: center;
+    width: 25%;
   }
 
   .btn-submit {
@@ -525,9 +541,11 @@
   }
 
   .logo-footer {
-    width: 16.5rem;
-    height: 9.25rem;
-    margin: 0;
+    width: 1.8rem;
+    height: 1.6rem;
+    position: absolute;
+    margin-left: 0.75rem;
+    margin-top: 0.5rem;
   }
 
   .colunma-12 {
@@ -537,5 +555,15 @@
 
   .link-footer {
     color: #000000;
+  }
+
+  .mundo-footer {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .footer-logo {
+    width: 19rem;
+    height: 12.5rem;
   }
 }
