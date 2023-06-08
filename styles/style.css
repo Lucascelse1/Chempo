@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
   * {
     margin: 0;
     padding: 0;
@@ -45,7 +45,6 @@
     display: flex;
     justify-content: end;
     padding: 2rem;
-    
   }
 
   .nav-ul li a {
@@ -58,7 +57,6 @@
     color: white;
   }
 }
-
 
 @media only screen and (min-width: 660px) {
   * {
@@ -257,7 +255,7 @@
   }
 
   /* subseccion */
-  #sub-seccion{
+  #sub-seccion {
     margin-top: 2rem;
   }
 
@@ -273,16 +271,15 @@
     justify-content: space-around;
     margin: 0 auto;
   }
-  
-  .imgs-normas{
+
+  .imgs-normas {
     width: 4rem;
     height: 4rem;
   }
-  
-  .titulo-normas{
+
+  .titulo-normas {
     text-align: center;
     font-family: Russo one;
-    
   }
 
   .parrafo-normas {
@@ -304,7 +301,7 @@
   .div-texto-normas {
     text-align: center;
   }
-  
+
   /* seccion 3 */
 
   #seccion3 {
@@ -318,7 +315,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
-    
   }
 
   .modo-uso {
@@ -351,7 +347,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    
   }
 
   .pasos {
@@ -388,16 +383,18 @@
     width: 60%;
     height: 17rem;
   }
-  
+
   /* seccion 4 */
 
   #seccion4 {
-    height: 70vh;
+    height: 140vh;
+  
   }
 
   .form-container {
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -407,13 +404,91 @@
     margin: 0.5rem;
   }
 
-  .form {
+  form {
     display: flex;
     flex-direction: column;
-    width: 60%;
-    height: max-content;
+    background-color: #ffff;
+    margin: auto;
+    width: 35%;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0);
+    text-align: center;
+    background-image:url(./imagenes/93193.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
   }
 
+  .div-titulo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .check-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .input-container {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .form-group {
+    position: relative;
+    --color: #5757577e;
+  }
+
+  .input {
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: 0.6em 0.3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+  }
+  .input:hover {
+    border-color:  blue;
+  }
+  .input:focus {
+    box-shadow: 0 0 5px black; 
+  }
+  .btn-submit {
+    transition: transform 0.3s ease; 
+  }
+  
+  .btn-submit:hover {
+    transform: scale(1.1); 
+  }
+  
+  .checkbox input:checked + label {
+    font-weight: bold; 
+  }
+  
+ 
+
+  .label {
+    display: flex;
+    font-size: 1.2rem;
+    font-family: Arial ;
+  }
+  .checkbox{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+  }
+
+  .checkbox label, input {
+    padding: 1rem;
+  }
+  .titulo-checkbox{
+    font-size: 1.2rem;
+  }
   .div-titulo {
     display: flex;
     justify-content: center;
@@ -424,61 +499,7 @@
     font-size: 3.4rem;
     margin-bottom: 1.25rem;
     font-family: Russo one;
-  }
-
-  .row1 {
-    display: flex;
-  }
-
-  .row1 div {
-    display: flex;
-    width: 50%;
-  }
-
-  .name input {
-    padding: 0.5rem;
-    width: 95%;
-  }
-
-  .apellido {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .apellido input {
-    width: 95%;
-    padding: 0.5rem;
-  }
-
-  .email input {
-    padding: 0.5rem;
-    width: 95%;
-  }
-
-  .celular {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .celular input {
-    padding: 0.5rem;
-    width: 95%;
-  }
-
-  .text-area {
-    display: flex;
-    justify-content: center;
-  }
-
-  .text-area textarea {
-    width: 98.3%;
-    height: 6rem;
-  }
-
-  .row4 {
-    display: flex;
-    width: 100%;
-    justify-content: center;
+    
   }
 
   .btn-submit {
@@ -514,8 +535,7 @@
     justify-content: center;
   }
 
-  .link-footer{
+  .link-footer {
     color: #000000;
   }
 }
-

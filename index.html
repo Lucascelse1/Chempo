@@ -135,7 +135,7 @@
                         </div>
 
                         <div class="div-texto-normas">
-                            <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus fugiat est quia
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus fugiat est quia
                                 mollitia,
                                 ipsum laboriosam porro accusamus nesciunt explicabo dicta aut cupiditate atque itaque.
                             </p>
@@ -145,15 +145,15 @@
                     </div>
 
                 </div>
-                
+
                 <div class="titulo-container-normas">
-                        <h1 class="titulo-normas">NORMAS DE USO</h1>
-                        <div class="parrafo-normas">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, suscipit eaque corporis
-                                laborum nisi ex ipsa quis quo, itaque saepe, in explicabo odio? Dolorem vel illo enim
-                                doloremque amet nesciunt!</p>
-                        </div>
+                    <h1 class="titulo-normas">NORMAS DE USO</h1>
+                    <div class="parrafo-normas">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, suscipit eaque corporis
+                            laborum nisi ex ipsa quis quo, itaque saepe, in explicabo odio? Dolorem vel illo enim
+                            doloremque amet nesciunt!</p>
                     </div>
+                </div>
 
 
         </section>
@@ -252,45 +252,56 @@
 
             <div class="form-container">
 
-                <div class="form">
-
-                    <form id="form" action="" method="POST">
-
-                        <div class="div-titulo">
-                            <h1 class="titulo-form">Solicitá asesoramiento</h1>
-                        </div>
-
-                        <div class="row1">
-                            <div class="name">
-                                <input placeholder="Nombre" type="text" id="from_name" name="from_name" required>
-                            </div>
-                            <div class="apellido">
-                                <input placeholder="Apellido" type="text" id="apellido_id" name="apellido_id" required>
-                            </div>
-                        </div>
-
-                        <div class="row1">
-                            <div class="email">
-                                <input placeholder="Email" type="email" id="email_id" name="email_id" required>
-                            </div>
-                            <div class="celular">
-                                <input placeholder="Celular" type="number" id="celular_id" name="celular_id" required>
-                            </div>
-                        </div>
-
-                        <div class="text-area">
-                            <textarea placeholder="Comentario" id="message" name="message" required></textarea>
-                        </div>
-
-
-                        <div class="row4">
-                            <div>
-                                <input class="btn-submit" id="button" type="submit" value="Enviar">
-                            </div>
-                        </div>
-
-                    </form>
+                <div class="div-titulo">
+                    <h1 class="titulo-form">Solicitá asesoramiento</h1>
+                    <p class="subtitulo-form">Aca va el subititulo</p>
                 </div>
+
+                <form id="form" class="form" action="" method="POST">
+                    <div class="input-container">
+                        <div class="form-group">
+                            <label class="label" for="">Nombre</label>
+                            <input class="input" type="text" id="from_name" name="from_name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="label" for="">Apellido</label>
+                            <input class="input" type="text" id="apellido_id" name="apellido_id" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="label" for="">Email</label>
+                            <input class="input" type="email" id="email_id" name="email_id" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="label" for="">Celular</label>
+                            <input class="input" type="number" id="celular_id" name="celular_id" required>
+                        </div>
+
+                        <div >
+                            <p class="titulo-checkbox">¿Por donde queres que te contactemos?</p>
+                            <div class="check-container">
+                                <div class="checkbox">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">Whatsapp</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">Mail</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="label" for="">Comentario</label>
+                            <textarea class="input" id="message" name="message" required></textarea>
+                        </div>
+                        <div class="btn-form">
+                            <input class="btn-submit" id="button" type="submit" value="Enviar">
+                        </div>
+                    </div>
+                </form>
             </div>
 
         </section>
