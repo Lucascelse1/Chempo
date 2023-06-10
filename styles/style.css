@@ -261,8 +261,8 @@
 
   .normas-container {
     width: 100%;
-    border-bottom: 0.25rem solid black;
-    border-top: 0.25rem solid black;
+    border-bottom: 0.25rem solid rgb(0, 0, 0);
+    border-top: 0.25rem solid rgb(0, 0, 0);
   }
 
   .logos-info {
@@ -300,6 +300,10 @@
 
   .div-texto-normas {
     text-align: center;
+  }
+
+  .subtitulo-form{
+
   }
 
   /* seccion 3 */
