@@ -29,7 +29,7 @@
                         <img srcset="" src="./styles/imagenes/logo.png" class="logo-header" alt="">
                     </div>
                     <div class="nav-btn">
-                        <button class="navbar-toggle">Menu</button>
+                        <button id="navbar-toggle">Menu</button>
                         <ul class="nav-ul" id="navbarList">
                             <li><a href="#seccion1">Inicio</a></li>
                             <li><a href="#seccion2">Info</a></li>
@@ -107,14 +107,14 @@
                         <div class="div-img-normas">
 
                             <img class="imgs-normas" src="./styles/imagenes/factory.png" alt="">
-                        
+
                         </div>
 
                         <div class="div-texto-normas">
 
                             <p>Somos una empresa dedicada a la fabricación en la industria nacional. Trabajamos
-                            arduamente para cumplir con sus necesidades, con productos de alta performance a precios
-                            justos.</p>
+                                arduamente para cumplir con sus necesidades, con productos de alta performance a precios
+                                justos.</p>
 
                         </div>
 
@@ -296,16 +296,29 @@
                             <input class="input" type="number" id="celular_id" name="celular_id" required>
                         </div>
 
+                        <div class="form-group">
+                            <label class="label" for="">Empresa</label>
+                            <input class="input" type="text" id="empresa_id" name="empresa_id" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="label" for="">Cargo</label>
+                            <input class="input" type="text" id="cargo_id" name="cargo_id" required>
+                        </div>
+
+
+
                         <div>
                             <p class="titulo-checkbox">¿Por dónde quieres que te contactemos?</p>
                             <div class="check-container">
                                 <div class="checkbox">
-                                    <input type="radio" name="contact_method" id="contact_method" value="Whatsapp">
-                                    <label for="whatsapp_radio">Whatsapp</label>
+                                    <input type="checkbox" name="contact_method" id="whatsapp_checkbox"
+                                        value="Whatsapp">
+                                    <label for="whatsapp_checkbox">Whatsapp</label>
                                 </div>
                                 <div class="checkbox">
-                                    <input type="radio" name="contact_method" id="contact_method" value="Mail">
-                                    <label for="mail_radio">Mail</label>
+                                    <input type="checkbox" name="contact_method" id="mail_checkbox" value="Mail">
+                                    <label for="mail_checkbox">Mail</label>
                                 </div>
                             </div>
                         </div>

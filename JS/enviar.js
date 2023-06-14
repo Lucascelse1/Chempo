@@ -33,7 +33,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
   emailjs.send(serviceID, templateID, formData)
     .then(() => {
       btn.value = 'Send Email';
-      alert('Sent!');
+      alert('Mensaje enviado exitosamente!');
       document.getElementById('form').reset(); // Reinicia el formulario
     }, (err) => {
       btn.value = 'Send Email';
