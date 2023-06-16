@@ -840,8 +840,18 @@
     font-size: 3.4rem;
     margin-bottom: 1.25rem;
     font-family: Russo one;
+    
   }
+.subtitulo-form{
+  font-weight: poppins;
+  font-size: 1.2rem ;
+  position: relative;
+  top: -15px;
+  right: 65px;
+  
 
+
+}
   .titulo-form-div {
     width: 60%;
     display: flex;
