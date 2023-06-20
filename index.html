@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
@@ -25,12 +25,16 @@
 
             <header>
                 <nav class="nav-bar">
-                    <div>
-                        <img srcset="" src="./styles/imagenes/logo.png" class="logo-header" alt="">
+                    <div class="logo-div">
+                        <img srcset="" src="/styles/imagenes/Logo CHEMPO.png" class="logo-header" alt="">
                     </div>
                     <div class="nav-btn">
-                        <button id="navbar-toggle">Menu</button>
-                        <ul class="nav-ul" id="navbarList">
+                        <button class="menu-btn">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </button>
+                        <ul class="nav-ul">
                             <li><a href="#seccion1">Inicio</a></li>
                             <li><a href="#seccion2">Info</a></li>
                             <li><a href="#seccion3">Modo de uso</a></li>
@@ -66,17 +70,17 @@
                 <div class="texto-seccion2">
                     <div>
                         <p>Las tintas penetrantes son un método ampliamente utilizado en la industria para detectar y
-                            evaluar defectos superficiales en materiales no porosos. 
+                            evaluar defectos superficiales en materiales no porosos.
                             <br>
                             Éste método de ensayo no destructivo (END) se utiliza para encontrar grietas, poros,
-                            discontinuidades y otras imperfecciones en la superficie de diversos materiales. 
+                            discontinuidades y otras imperfecciones en la superficie de diversos materiales.
                             <br>
                             Las tintas penetrantes ofrecen varias ventajas, como su sensibilidad para detectar defectos
                             <br> muy pequeños y su fácil uso.
                         </p>
                     </div>
 
-                    <div>
+                    <div class="div-utilidad">
                         <img src="./styles/imagenes/Fotograndeparamododeuso.png" class="imagen-utilidad">
                     </div>
 
@@ -159,7 +163,7 @@
                             ASM-2644, ASTM E-165 y ASTM E-1418. </p>
                     </div>
                 </div>
-
+            </div>
 
         </section>
 
@@ -182,20 +186,20 @@
 
                     <div class="pasos">
                         <div class="p-pasos">
-                            <p><strong>PASO 1:</strong> <img class="imagenes-tintas" src="./styles/imagenes/Foto revelador.png" alt=""> <br>
+                            <p><strong>PASO 1:</strong> <img class="imagenes-tintas" src="/styles/imagenes/Foto revelador.png" alt=""> <br>
                                 <br>
                                 Es importante garantizar que la pieza que se va a analizar esté libre de suciedad y
                                 grasa. Aplicar el revelador sobre la superficie para asegurar una limpieza eficiente.
                             </p>
                         </div>
-                        <div class="img-pasos">
-                            <img src="./styles/imagenes/Paso 1.png" class="imagenes-pasos">
+                        <div id="uno" class="img-pasos">
+                            <img src="/styles/imagenes/Paso 1.png" class="imagenes-pasos">
                         </div>
                     </div>
 
                     <div class="pasos">
                         <div class="p-pasos">
-                            <p><strong>PASO 2:</strong> <img class="imagenes-tintas" src="./styles/imagenes/Foto tinta.png" alt=""> <br>
+                            <p><strong>PASO 2:</strong> <img class="imagenes-tintas" src="/styles/imagenes/Foto tinta.png" alt=""> <br>
                                 <br>
                                 Aplique la tinta penetrante de, color rojo intenso, en toda la superficie de la pieza
                                 que se va a probar. Permita que la tinta penetre durante al menos 10 minutos, teniendo
@@ -205,27 +209,29 @@
                         </div>
 
                         <div class="img-pasos">
-                            <img src="./styles/imagenes/Paso 2.png" class="imagenes-pasos">
+                            <img src="/styles/imagenes/Paso 2.png" class="imagenes-pasos">
                         </div>
                     </div>
 
                     <div class="pasos">
                         <div class="p-pasos">
-                            <p><strong>PASO 3</strong> <img class="imagenes-tintas" src="./styles/imagenes/Foto limpiador.png" alt=""> <br>
+                            
+                            <p><strong>PASO 3</strong> <img class="imagenes-tintas" src="/styles/imagenes/Foto limpiador.png" alt=""> <br>
                                 <br>
                                 Después de transcurrido el tiempo recomendado, aplique el limpiador utilizando un paño
                                 limpio para eliminar el exceso de tinta. El limpiador debe aplicarse sobre el paño y no
                                 directo sobre la pieza.
                             </p>
+
                         </div>
                         <div class="img-pasos">
-                            <img src="./styles/imagenes/Paso 3.png" class="imagenes-pasos">
+                            <img src="/styles/imagenes/Paso 3.png" class="imagenes-pasos">
                         </div>
                     </div>
 
                     <div class="pasos">
                         <div class="p-pasos">
-                            <p><strong>PASO 4</strong> <img class="imagenes-tintas" src="./styles/imagenes/Foto revelador.png" alt=""> <br>
+                            <p><strong>PASO 4</strong> <img class="imagenes-tintas" src="/styles/imagenes/Foto revelador.png" alt=""> <br>
                                 <br>
                                 Una vez la pieza este limpia, aplique el revelador. Este absorberá el líquido penetrante
                                 que ha quedado en las imperfecciones de la pieza que se manifestaran de color rojo sobre
@@ -233,19 +239,20 @@
                             </p>
                         </div>
                         <div class="img-pasos">
-                            <img src="./styles/imagenes/Paso 4.png" class="imagenes-pasos">
+                            <img src="/styles/imagenes/Paso 4.png" class="imagenes-pasos">
                         </div>
                     </div>
 
-                    <div class="pasos">
+                    <div class="pasos5">
                         <div class="p-pasos">
                             <p><strong>PASO 5</strong> <br>
+                                <br>
                                 Finalmente, se realiza una inspección visual para identificar y evaluar la cantidad, el
                                 tamaño y la ubicación de los defectos. Una vez terminada, se podrá realizar la limpieza
                                 de la pieza con el componente limpiador.</p>
                         </div>
-                        <div class="img-pasos">
-                            <img src="./styles/imagenes/Paso 5.png" class="imagenes-pasos">
+                        <div class="img-pasos5">
+                            <img src="/styles/imagenes/Paso 5.png" class="imagenes-pasos5">
                         </div>
 
                     </div>
@@ -258,20 +265,20 @@
             <div class="form-container">
 
                 <div class="div-titulo">
-                    
+
                     <div class="titulo-form-div">
                         <h1 class="titulo-form">Solicitá asesoramiento</h1>
                         <p class="subtitulo-form">Contactate con nuestros asesores para recibir más información</p>
                     </div>
-                
+
                     <div class="titulo-img">
-                        <img class="img-form" src="./styles/imagenes/producto.png" alt="">
+                        <img class="img-form" src="/styles/imagenes/producto.png" alt="">
 
                     </div>
 
                 </div>
 
-              
+
 
                 <form id="form" class="form" action="" method="POST">
                     <div class="input-container">
@@ -337,14 +344,14 @@
         </section>
 
         <a class="boton-flotante" href="https://api.whatsapp.com/send?phone=541161299817">
-            <img src="./styles/imagenes/icono-wsp.png" alt="">
+            <img src="/styles/imagenes/icono-wsp.png" alt="">
         </a>
 
         <footer>
             <div class="footer">
                 <div class="row d-flex justify-content-center pt-5 mx-1">
                     <div class="col-12 col-md-3 pb-5 pb-0">
-                        <img src="./styles/imagenes/logo.png" class="footer-logo" alt="">
+                        <img src="/styles/imagenes/Logo CHEMPO.png" class="footer-logo" alt="">
                     </div>
                     <div class="col-12 col-md-3 pb-4 pb-0">
                         <h1 class="text-uppercase title_footer">ubicación</h1>
@@ -387,7 +394,7 @@
                         <a href="https://chempo.com.ar/" class="item_social">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <img class="logo-footer" src="./styles/imagenes/logoblanco2.png" alt="">
+                                <img class="logo-footer" src="/styles/imagenes/logoblanco2.png" alt="">
                             </span>
                         </a>
                     </div>
@@ -413,9 +420,7 @@
     <script src="./JS/enviar.js"></script>
     <script src="./JS/navbar.js"></script>
 
+
 </body>
 
 </html>
-
-
-
