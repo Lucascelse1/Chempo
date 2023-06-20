@@ -1,0 +1,125 @@
+.logo-div {
+  width: 60%;
+}
+
+.logo-header {
+  width: 13rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  background-color: #fefefe;
+  padding: 10px;
+}
+
+.logo-div {
+  flex: 1;
+}
+
+.logo-header {
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+}
+
+.menu-btn {
+  display: none;
+  background-color: transparent;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.nav-ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-ul li {
+  margin-left: 15px;
+}
+
+.nav-ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-ul {
+    display: none;
+  }
+
+  .nav-btn{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .nav-ul.show {
+    display: flex;
+    flex-direction: column;
+    position:fixed;
+    top: 6rem;
+    right: 3rem;
+    background-color: black;
+    font-size: 1.1rem;
+    width: 50%;
+    cursor: pointer;
+  }
+
+  .nav-ul.show li {
+    margin: 0.5rem;
+    border-bottom: 1px solid white;
+    padding: 0.5rem;
+  }
+
+  .nav-ul.show li a {
+    color: white;
+    font-family: Russo One;
+    
+  }
+
+  .logo-div {
+    width: max-content;
+  }
+
+  .menu-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    position: relative;
+  }
+
+  .line {
+    background-color: #000;
+    display: block;
+    height: 0.2rem;
+    margin-bottom: 0.5rem;
+    width: 2rem;
+  }
+
+  .line:last-child {
+    margin-bottom: 0;
+  }
+  
+  
+  .menu-btn:hover .line:last-child {
+    margin-bottom: 4px;
+  }
+}
