@@ -169,11 +169,6 @@
     border-top: 0.25rem solid black;
   }
 
-  .logos-info {
-  }
-
-  .div-tarjeta {
-  }
 
   .div-img-normas {
     display: flex;
@@ -256,9 +251,6 @@
     text-decoration: underline;
   }
 
-  .subtitulo-form {
-  
-  }
 
   .form {
     display: flex;
@@ -700,9 +692,6 @@
 
   /* seccion 4 */
 
-  #seccion4 {
-  }
-
   .form-container {
     height: 100%;
     display: flex;
@@ -1035,8 +1024,6 @@
 
   /* seccion 4 */
 
-  #seccion4 {
-  }
 
   .form-container {
     height: 100%;
