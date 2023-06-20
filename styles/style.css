@@ -197,38 +197,48 @@
     font-family: Russo one;
   }
 
-  .pasos {
+  .pasos1 {
+    border-bottom: 1px solid black;
+  }
+
+  .p-pasos1 {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    padding: 1rem 0 1rem 0;
   }
 
-  .img-pasos {
-    position: absolute;
-    left: 13rem;
+  .paso-img {
+    display: flex;
+    justify-content: space-around;
   }
 
-  .imagenes-pasos {
-    width: 10rem;
-    height: 10rem;
-  }
-
-  .img-pasos5 {
+  .img-pasos1{
     display: flex;
     justify-content: center;
   }
 
-  .imagenes-pasos5 {
+  .imagenes-pasos1 {
     width: 70%;
     height: 14rem;
   }
 
-  .pasos5 {
-    padding: 1rem 0 1rem 0;
+  .paso1-titulo {
+    width: 40%;
+    display: flex;
+    align-items: center;
   }
 
-  .imagenes-tintas {
+  .div-img-tinta1 {
+    width: 100%;
+  }
+
+  .pasos1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imagenes-tintas1 {
     width: 40%;
-    position: relative;
   }
 
   .div-titulo {
@@ -237,7 +247,7 @@
     justify-content: center;
   }
 
-  .titulo-img {
+  .imagen-titulo-form {
     display: none;
   }
 
@@ -327,6 +337,12 @@
 
 /*Medida para escritorio*/
 
+
+
+
+
+
+
 @media only screen and (min-width: 660px) {
   * {
     margin: 0;
@@ -402,9 +418,10 @@
   .items-sec1 {
     display: flex;
     flex-direction: row-reverse;
-    margin: 0 auto;
     padding: 6.25rem;
     justify-content: center;
+    height: 100%;
+    align-items: center;
   }
 
   .titulos-sec1 {
@@ -425,11 +442,15 @@
     font-size: 2rem;
   }
 
+  .img-sec1{
+    width: 30%;
+    display: flex;
+    justify-content: end;
+  }
+
   .imagen-section1 {
-    width: 32rem;
-    height: 27rem;
-    margin-right: 2rem;
-    margin-top: 2.2rem;
+    width: 100%;
+    height: 90%;
   }
 
   /* seccion 2 */
@@ -508,20 +529,17 @@
   .mini-container {
     display: flex;
     margin-top: 8.125rem;
-    justify-content: center;
-    margin-left: 5rem;
+    justify-content: space-evenly;
     width: 100%;
     margin: 0 auto;
-    overflow: hidden;
   }
 
   .mini-container img {
     transition: all 300ms;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    width: 16rem;
+    width: 100%;
     height: 9rem;
   }
+
 
   .mini-container img:hover {
     transform: scale(1.15);
@@ -627,67 +645,54 @@
     width: 100%;
   }
 
-  .pasos {
-    display: flex;
-    font-size: 1.25rem;
-    font-family: Poppins;
-    width: 100%;
-    flex-direction: row-reverse;
-  }
-
-  .pasos5 {
-    display: flex;
-    font-size: 1.25rem;
-    font-family: Poppins;
-    width: 100%;
-    flex-direction: row-reverse;
-  }
-
-  .p-pasos {
-    width: 60%;
-    font-size: 1.4rem;
-    display: flex;
-    flex-direction: column;
-    font-family: poppins;
-  }
-
-  .p-pasos p {
-    width: 70%;
-    padding: 30px;
-  }
-
-  .p-pasos p strong {
+  .container-pasos strong {
     font-size: 1.7rem;
   }
 
-  .img-pasos {
+  .imagenes-tintas1 {
+    width: 100%;
+    height: 10rem;
+  }
+
+  .paso-img {
     display: flex;
-    justify-content: end;
-    width: 30%;
+    height: 20%;
+  }
+
+  .paso-img div{
+    display: flex;
     align-items: center;
   }
 
-  .img-pasos5 {
+  .pasos1 {
+    width: 100%;
     display: flex;
-    justify-content: end;
-    width: 30%;
-    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-around;
   }
 
-  .imagenes-pasos5 {
-    width: 60%;
-    height: 17rem;
+  .p-pasos1 {
+    width: 50%;
+    height: 30%;
   }
 
-  .imagenes-pasos {
-    width: 60%;
-    height: 17rem;
+  .p-pasos1 p {
+    font-size: 1.4rem;
+    font-family: Poppins;
   }
 
-  .imagenes-tintas {
-    width: 30%;
-    height: 12rem;
-    margin-left: 50px;
+  .div-img-tinta1 {
+    height: 10%;
+  }
+
+  .img-pasos1 {
+    display: flex;
+    justify-content: baseline;
+    width: 25%;
+  }
+
+  .imagenes-pasos1 {
+    width: 100%;
   }
 
   /* seccion 4 */
@@ -721,44 +726,55 @@
     background-size: cover;
   }
 
-  .div-titulo {
+  .div-titulo1 {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     width: 100%;
   }
 
-  .titulo-form {
-    text-decoration: underline;
-    font-size: 3.7rem;
-    margin-bottom: 1.25rem;
-    font-family: Russo one;
-    width: 60%;
-    margin-left: 6rem;
-  }
-
-  .subtitulo-form {
-    font-family: poppins;
-    font-size: 1.3rem;
-    margin-left: 6.7rem;
-    color: #52525b;
-    margin-top: 3rem;
-  }
-
   .titulo-form-div {
-    width: 75%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: center;
+    padding: 2rem;
+    align-items: center;
   }
 
-  .titulo-img {
+  .titulo-form {
     display: flex;
-    justify-content: flex-end;
-    width: 25%;
+    align-items: center;
+    position: absolute;
+  }
+
+  .titulo-form h1 {
+    font-family: Russo one;
+    text-decoration: underline;
+    font-size: 4.2rem;
+  }
+
+  .imagen-titulo-form {
+    position: relative;
+    right: 30rem;
+  }
+  
+  .div-subtitulo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .div-subtitulo h4 {
+    font-family: poppins;
+    color:#52525B;
+    width: 40.6%;
+    text-align: center;
+    font-size: 1.3rem;
+    
   }
 
   .img-form {
-    width: 14rem;
-    height: 14rem;
+    width: 10rem;
+    height: 10rem;
   }
 
   .check-container {
@@ -874,340 +890,10 @@
   }
 
   .footer-logo {
-    width: 19rem;
-    height: 12.5rem;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .imgs-normas {
-    width: 4rem;
-    height: 4rem;
-  }
-
-  .titulo-normas {
-    text-align: center;
-    font-family: Russo one;
-  }
-
-  .parrafo-normas {
-    width: 70%;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  .div-img-normas {
-    display: flex;
-    justify-content: center;
-    margin: 1rem;
-  }
-
-  .div-tarjeta {
-    margin: 1rem 3rem 1rem 3rem;
-    width: 15%;
-  }
-
-  .div-texto-normas {
-    text-align: center;
-  }
-
-  /* seccion 3 */
-
-  #seccion3 {
-    margin-top: 1.875rem;
-  }
-
-  .fondo-sec3 {
     width: 80%;
-    background-image: url(/styles/imagenes/limpiadores_2.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 auto;
-  }
-
-  .modo-uso {
-    font-family: Russo One;
-    border-bottom: 0.25rem solid gray;
-    width: 65%;
-    margin: 0 auto;
-  }
-
-  .modo-uso h1 {
-    text-align: right;
-    font-size: 3rem;
-    margin: 0;
-  }
-
-  .subtitulo-seccion3 {
-    font-family: poppins;
-    width: 65%;
-    margin: 0 auto;
-    margin-bottom: 2.4rem;
-  }
-
-  .subtitulo-seccion3 h4 {
-    text-align: right;
-    margin: 0;
-    font-weight: bold;
-  }
-
-  .container-pasos {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .pasos {
-    display: flex;
-    font-size: 1.25rem;
-    font-family: Poppins;
-    width: 100%;
-    flex-direction: row-reverse;
-  }
-
-  .pasos5 {
-    display: flex;
-    font-size: 1.25rem;
-    font-family: Poppins;
-    width: 100%;
-    flex-direction: row-reverse;
-  }
-
-  .p-pasos {
-    width: 60%;
-    font-size: 1.4rem;
-    display: flex;
-    flex-direction: column;
-    font-family: poppins;
-  }
-
-  .p-pasos p {
-    width: 70%;
-    padding: 30px;
-  }
-
-  .p-pasos p strong {
-    font-size: 1.7rem;
-  }
-
-  .img-pasos {
-    display: flex;
-    justify-content: end;
-    width: 30%;
-    align-items: center;
-  }
-
-  .img-pasos5 {
-    display: flex;
-    justify-content: end;
-    width: 30%;
-    align-items: center;
-  }
-
-  .imagenes-pasos5 {
-    width: 60%;
-    height: 17rem;
-  }
-
-  .imagenes-pasos {
-    width: 60%;
-    height: 17rem;
-  }
-
-  .imagenes-tintas {
-    width: 30%;
-    height: 12rem;
-    margin-left: 50px;
-  }
-
-  /* seccion 4 */
-
-
-  .form-container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 4rem;
-  }
-
-  .form-container form div {
-    margin: 0.5rem;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-    background-color: #ffff;
-    width: 35%;
-    padding: 4.5em 3em;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px -5px rgb(0 0 0);
-    text-align: center;
-    background-image: url(/styles/imagenes/93193.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .div-titulo {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-  }
-
-  .titulo-form {
-    text-decoration: underline;
-    font-size: 3.7rem;
-    margin-bottom: 1.25rem;
-    font-family: Russo one;
-    width: 60%;
-    margin-left: 6rem;
-  }
-
-  .subtitulo-form {
-    font-family: poppins;
-    font-size: 1.3rem;
-    margin-left: 6.7rem;
-    color: #52525b;
-    margin-top: 3rem;
-  }
-
-  .titulo-form-div {
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .titulo-img {
-    display: flex;
-    justify-content: flex-end;
-    width: 25%;
-  }
-
-  .img-form {
-    width: 14rem;
-    height: 14rem;
-  }
-
-  .check-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .input-container {
-    display: grid;
-    gap: 1rem;
-  }
-
-  .form-group {
-    position: relative;
-    --color: #5757577e;
-  }
-
-  .input {
-    width: 100%;
-    background: none;
-    color: #706c6c;
-    font-size: 1rem;
-    padding: 0.6em 0.3em;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid var(--color);
-  }
-
-  .input:hover {
-    border-color: blue;
-  }
-
-  .input:focus {
-    box-shadow: 0 0 5px black;
-  }
-
-  .btn-submit {
-    transition: transform 0.3s ease;
-  }
-
-  .btn-submit:hover {
-    transform: scale(1.1);
-  }
-
-  .checkbox input:checked + label {
-    font-weight: bold;
-  }
-
-  .label {
-    display: flex;
-    font-size: 1.2rem;
-    font-family: Arial;
-  }
-
-  .checkbox {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.2rem;
-  }
-
-  .checkbox label,
-  input {
-    padding: 1rem;
-  }
-
-  .titulo-checkbox {
-    font-size: 1.2rem;
-  }
-
-  .btn-submit {
-    background-color: transparent;
-    border: 0.125rem solid #000000;
-    color: #000000;
-    padding: 0.625rem 1.25rem;
-    cursor: pointer;
-    width: 10rem;
-  }
-
-  .boton-flotante {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 9999;
-  }
-
-  footer {
-    background: rgb(240, 243, 239);
-    color: black;
-    width: 100%;
-  }
-
-  .logo-footer {
-    width: 1.8rem;
-    height: 1.6rem;
-    position: absolute;
-    margin-left: 0.75rem;
-    margin-top: 0.5rem;
-  }
-
-  .colunma-12 {
-    display: flex;
-    justify-content: center;
-  }
-
-  .link-footer {
-    color: #000000;
-  }
-
-  .mundo-footer {
-    width: 2rem;
-    height: 2rem;
-  }
-
-  .footer-logo {
-    width: 19rem;
     height: 12.5rem;
+    display: flex;
+    justify-content: center;
   }
+
 }
